@@ -11,14 +11,14 @@ Quickstart: Using CyVerse for a Shared Project
 ===============================================
 
 *Goal*
--------------------
+------
 
 Learn the basic steps for setting up a collaborative project using CyVerse.
 
 -----
 
 Prerequisites
--------------------
+-------------
 
 Downloads, access, and services
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -167,7 +167,7 @@ Post your question to the user forum:
 
    <a href="https://www.cyverse.org/data-policy" target="blank">CyVerse Data Policy</a>
    
-.. |allocation increase form|
+.. |allocation increase form| raw:: html
 
 	<a href="https://user.cyverse.org/forms/2/overview" target="blank">allocation increase form</a>
 

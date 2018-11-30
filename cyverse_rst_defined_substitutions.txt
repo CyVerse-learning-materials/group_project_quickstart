@@ -115,6 +115,7 @@
     :width: 25
     :height: 25
 .. |Data_Commons_logo| image:: ./img/data_commons/DataCommons_DrkBlue.png
-    :width: 25
-    :height: 25
-_Data_Commons_logo: http://datacommons.cyverse.org/
+    :width: 75
+    :height: 75
+.. _Data_Commons_logo: http://datacommons.cyverse.org/
+
