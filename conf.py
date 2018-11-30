@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from misc.cyverse_sphinx_conf import *  # noqa
 
-project = 'group_project_quickstart'
+project = 'Group Projects Quickstart'
 copyright = '2018, CyVerse'
 author = 'CyVerse'
 version = '1.0'
