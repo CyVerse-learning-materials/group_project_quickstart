@@ -100,6 +100,9 @@ We strongly recommend that a single person be in charge of data management. Ther
 
 The owner of a folder has the ability to delete or rename the folder and any of its contents. If project members are given write permission to the project folder, they will be able to create their own sub-folders which they will own. In this way, project members can control access to their own data.
 
+.. tip::
+		Before beginning your project, make a plan for how to name files and organize folders. Agree on which metadata are needed for each type of file, and set up protocols for adding metadata when files are uploaded. 
+
 *Sharing tools and analyses with project members*
 ---------------------------------------------------
 
