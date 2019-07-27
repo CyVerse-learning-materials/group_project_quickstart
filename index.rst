@@ -110,6 +110,8 @@ Projects can use CyVerse analysis platforms to develop and share analysis tools 
 
 The |Discovery Environment| (DE) contains hundreds of application that can be used by projects. Apps can be chained together to form workflows in the DE. It is now possible for CyVerse users to integrate their own applications or any open source application into the DE, using Docker containers. Projects may create private apps and workflows, to be shared only with project members, and then make those apps public when they are ready.
 
+In the DE, you can create a team (*add link to documentation*) and share apps with your team.
+
 |Atmosphere| can be used to set up a virtual machine (VM) with project software, which can then be used by all project members. The VM can later be imaged (made permanent) and published along with the project.
 
 If your project includes a lot of computationally intensive analyses, you should consider requesting an XSEDE allocation (for the U.S. national super-computer infrastructure) and setting up HPC workflows using tools such as |Pegasus|.
