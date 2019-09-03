@@ -92,7 +92,7 @@ The sharing functionality the CyVerse Data Store can be used to share data among
 
 According to the |CyVerse Data Policy|, all users receive a default allocation of 100GB. Shared data is counted as part of the allocation of whoever owns the folder that contains it. To request an increase to your allocation, should that become necessary, use the |allocation increase form|. We expect that users hosting shared directories will need to request larger data allocations.
 
-If your project needs a shared folder for data that will be made public, you can request a |Community Released Data Folder|. Community Released folders are intended for public data, not for shared projects that are kept private.
+If your project needs a shared folder for data that that going to be public during the active research phase of the project (e.g., you want to share transcriptomes or draft genomes as they are created, before publication), you can request a |Community Released Data Folder|. Community Released folders are intended for public data, not for shared projects that are kept private among collaborators.
 
 Managing data in a shared project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,6 +102,13 @@ The owner of a folder has the ability to delete or rename the folder and any of 
 
 .. tip::
 		Before beginning your project, make a plan for how to name files and organize folders. Agree on which metadata are needed for each type of file, and set up protocols for adding metadata when files are uploaded. 
+
+Publishing data from a shared project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+When you are ready to publish the results of your project, you should also publish the data to an appropriate repository. For sequence data, that is one of the INDSC repositories, such as NCBI's SRA. Other data types can be published to general scientific repositories or to the |CyVerse Data Commons|. See |Publishing your data through the CyVerse Data Commons|.
+
+Group projects that are using a |Community Released Data Folder| to share data pre-publication are encouraged to transition to fully published data (with a DOI) when the data are stable. At that point, data can move into the Data Commons repository in its own folder, or it can remain within the shared project folder, but project members will lose edit access to the dataset. For more questions on this option, contact doi@cyverse.org.
+
 
 *Sharing tools and analyses with project members*
 ---------------------------------------------------
@@ -183,7 +190,16 @@ Post your question to the user forum:
 .. |Community Released Data Folder| raw:: html
 
 	<a href="https://wiki.cyverse.org/wiki/display/DC/Publishing+Data+through+the+Data+Commons" target="blank">Community Released Data Folder</a>
+
+.. |Publishing your data through the CyVerse Data Commons| raw:: html
+
+	<a href="https://wiki.cyverse.org/wiki/display/DC/Publishing+Data+through+the+Data+Commons" target="blank">Publishing your data through the CyVerse Data Commons</a>
 	
 .. |Pegasus| raw:: html
 
 	<a href="https://pegasus.isi.edu/" target="blank">Pegasus</a>
+
+.. |CyVerse Data Commons| raw:: html
+
+	<a href="https://datacommons.cyverse.org/" target="blank">CyVerse Data Commons</a>
+
