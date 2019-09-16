@@ -15,6 +15,15 @@ Quickstart: Using CyVerse for a Shared Project
 
 Learn the basic steps for setting up a collaborative project using CyVerse.
 
+
+----
+
+.. toctree::
+	:maxdepth: 2
+
+	Quickstart home <self>
+	Shared projects on Bisque <bisque_shared.rst>
+
 -----
 
 Prerequisites
@@ -83,7 +92,7 @@ Input and example data
 
 For projects that are part of a single lab, we recommend that the PI create a CyVerse account and share it with lab members. Specific sub-directories can be shared with specific lab members as desired.
 
-For projects that are collaborations among multiple labs, one person should be create a project folder to share with all collaborators. Collaborators must decide among themselves who has read, write, and own permission. 
+For projects that are collaborations among multiple labs, one person should be create a project folder to share with all collaborators. Collaborators must decide among themselves who will host the main folder and who has read, write, and own permission for all folders. 
 
 .. tip::
 		Anyone who has own permission on a folder can delete it or rename it!
@@ -93,6 +102,9 @@ The sharing functionality the CyVerse Data Store can be used to share data among
 According to the |CyVerse Data Policy|, all users receive a default allocation of 100GB. Shared data is counted as part of the allocation of whoever owns the folder that contains it. To request an increase to your allocation, should that become necessary, use the |allocation increase form|. We expect that users hosting shared directories will need to request larger data allocations.
 
 If your project needs a shared folder for data that that going to be public during the active research phase of the project (e.g., you want to share transcriptomes or draft genomes as they are created, before publication), you can request a |Community Released Data Folder|. Community Released folders are intended for public data, not for shared projects that are kept private among collaborators.
+
+.. tip::
+		If your project is image based (i.e. you are sharing a lot of images), you may want to use |Bisque| to manage the data. If so, see the page on `Managing a shared Bisque project <bisque_shared.html>`_.
 
 Managing data in a shared project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -200,3 +212,6 @@ Search for an answer:
 
 	<a href="https://datacommons.cyverse.org/" target="blank">CyVerse Data Commons</a>
 
+.. |Bisque| raw:: html
+
+<a href="https://bisque.cyverse.org/" target="blank">Bisque</a>
