@@ -10,13 +10,6 @@
 Quickstart: Using CyVerse for a Shared Project 
 ===============================================
 
-*Goal*
-------
-
-Learn the basic steps for setting up a collaborative project using CyVerse.
-
-
-----
 
 .. toctree::
 	:maxdepth: 2
@@ -24,9 +17,15 @@ Learn the basic steps for setting up a collaborative project using CyVerse.
 	Quickstart home <self>
 	Shared projects on Bisque <bisque_shared.rst>
 
+
+*Goal*
+------
+
+Learn the basic steps for setting up a collaborative project using CyVerse.
+
 -----
 
-Prerequisites
+*Prerequisites*
 -------------
 
 Downloads, access, and services
@@ -42,16 +41,13 @@ Downloads, access, and services
      - Preparation/Notes
      - Link/Download
    * - CyVerse account
-     - You will need a CyVerse account to complete this exercise
-     - |CyVerse User Portal|
+     - Be sure that all project members register for CyVerse accounts at the |CyVerse User Portal|. 
+     - |Creating a CyVerse Account|
 
 Platform(s)
 ~~~~~~~~~~~
 
-*The following CyVerse platform(s) can be used in a collaborative project:*
-
- ..
-   #### comment: delete any row not needed in this table ####
+*The following CyVerse platform(s) can be used in a collaborative project. Be sure all project members are familiar with them.*
 
 .. list-table::
     :header-rows: 1
@@ -81,16 +77,17 @@ Input and example data
 
 *Get started*
 --------------
+1. **Make a plan.** You should have a `data management plan (DMP) <https://en.wikipedia.org/wiki/Data_management_plan>`_ before you begin your project. There are many resources on the web to guide you on how to create a DMP. The most important element for this quick start are to know how you will organize your files and folders, what metadata you will use, and to make sure you have a *written SOP* for managing data.
 
-1. Any project members who will be using CyVerse should take a look at the |Data Store Guide| and the |Discovery Environment Guide|. You may also want to review the |Atmosphere Guide|.
-2. Be sure that all project members register for CyVerse accounts at the |CyVerse User Portal|. See |Creating a CyVerse Account|.
+.. tip::
+		Before beginning your project, make a plan for how to name files and organize folders. Agree on which metadata are needed for each type of file, and set up protocols for adding metadata when files are uploaded. 
 
 ----
 
-*Sharing data with project members*
+*Share data with project members*
 -------------------------------------
 
-For projects that are part of a single lab, we recommend that the PI create a CyVerse account and share it with lab members. Specific sub-directories can be shared with specific lab members as desired.
+For projects that are part of a single lab, we recommend that the PI create a CyVerse account, then create a project directory and share it with lab members. Specific sub-directories can be shared with specific lab members as desired.
 
 For projects that are collaborations among multiple labs, one person should be create a project folder to share with all collaborators. Collaborators must decide among themselves who will host the main folder and who has read, write, and own permission for all folders. 
 
@@ -106,23 +103,21 @@ If your project needs a shared folder for data that that going to be public duri
 .. tip::
 		If your project is image based (i.e. you are sharing a lot of images), you may want to use |Bisque| to manage the data. If so, see the page on `Managing a shared Bisque project <bisque_shared.html>`_.
 
-Managing data in a shared project
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We strongly recommend that a single person be in charge of data management. There should also be a single person (generally the PI) who has ownership of the project folders and who sets read and write permissions for others. This ensures continuity when people move on. The PI can give ownership to a data manager for setting permissions, but should maintain their own ownership as well.
+*Manage data in a shared project*
+-------------------------------------
+We strongly recommend that a single person be in charge of data management. There should also be a single person (generally the PI) who has ownership of the project folders and who sets read and write permissions for others. This ensures continuity when people move on. The PI can give ownership to a data manager for setting permissions, but should maintain their ownership as well.
 
 The owner of a folder has the ability to delete or rename the folder and any of its contents. If project members are given write permission to the project folder, they will be able to create their own sub-folders which they will own. In this way, project members can control access to their own data.
 
-.. tip::
-		Before beginning your project, make a plan for how to name files and organize folders. Agree on which metadata are needed for each type of file, and set up protocols for adding metadata when files are uploaded. 
 
-Publishing data from a shared project
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Publish data from a shared project*
+-------------------------------------
 When you are ready to publish the results of your project, you should also publish the data to an appropriate repository. For sequence data, that is one of the INDSC repositories, such as NCBI's SRA. Other data types can be published to general scientific repositories or to the |CyVerse Data Commons|. See |Publishing your data through the CyVerse Data Commons|.
 
 Group projects that are using a |Community Released Data Folder| to share data pre-publication are encouraged to transition to fully published data (with a DOI) when the data are stable. At that point, data can move into the Data Commons repository in its own folder, or it can remain within the shared project folder, but project members will lose edit access to the dataset. For more questions on this option, contact doi@cyverse.org.
 
 
-*Sharing tools and analyses with project members*
+*Share tools and analyses with project members*
 ---------------------------------------------------
 
 Projects can use CyVerse analysis platforms to develop and share analysis tools and workflows.
@@ -135,8 +130,8 @@ In the DE, you can create a team (*add link to documentation*) and share apps wi
 
 If your project includes a lot of computationally intensive analyses, you should consider requesting an XSEDE allocation (for the U.S. national super-computer infrastructure) and setting up HPC workflows using tools such as |Pegasus|.
 
-Additional information, help
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Additional information, help*
+-------------------------------------
 
 Search for an answer:
 |CyVerse Learning Center| or
