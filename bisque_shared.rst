@@ -7,7 +7,7 @@
 
 |Data_Commons_logo|_
 
-Quickstart: Using CyVerse for a Shared Project 
+Quickstart: Using CyVerse Bisque for a Shared Project 
 ===============================================
 
 *Goal*
