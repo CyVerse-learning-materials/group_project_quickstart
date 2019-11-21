@@ -68,6 +68,10 @@ Platform(s)
       - |DE Manual|
       - |Discovery Environment Guide|
 
+.. tip::
+		If your project is image based (i.e. you are sharing a lot of images), you may want to use |Bisque| to manage the data. If so, see the page on `Managing a shared Bisque project <bisque_shared.html>`_.
+
+
 Input and example data
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -77,7 +81,9 @@ Input and example data
 
 *Get started*
 --------------
-1. **Make a plan.** You should have a `data management plan (DMP) <https://en.wikipedia.org/wiki/Data_management_plan>`_ before you begin your project. There are many resources on the web to guide you on how to create a DMP. The most important element for this quick start are to know how you will organize your files and folders, what metadata you will use, and to make sure you have a *written SOP* for managing data.
+**Make a plan.** You should have a `data management plan (DMP) <https://en.wikipedia.org/wiki/Data_management_plan>`_ before you begin your project. There are many resources on the web to guide you on how to create a DMP, including this `CyVerse documentation <https://learning.cyverse.org/projects/foss-2020/en/latest/Data_management/dmp.html>`_.
+
+The most important DMP elements for this quick start are to know how you will organize your files and folders, what metadata you will use, and to make sure you have a *written SOP* for managing data.
 
 .. tip::
 		Before beginning your project, make a plan for how to name files and organize folders. Agree on which metadata are needed for each type of file, and set up protocols for adding metadata when files are uploaded. 
@@ -87,35 +93,39 @@ Input and example data
 *Share data with project members*
 -------------------------------------
 
+Decide who has access to the data
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There should be a single person (generally a PI) who has ownership of the project folders and who sets read and write permissions for others. This ensures continuity when people move on. The PI can delegate responsibility for setting permissions to a data manager, but should maintain their ownership of all folders as well.
+
+The owner of a folder has the ability to delete or rename the folder and any of its contents. If project members are given write permission to the project folder, they will be able to create their own sub-folders which they will own. In this way, project members can control access to their own data.
+
+.. warning::
+		Anyone who has own permission on a folder can delete it or rename it!
+
 For projects that are part of a single lab, we recommend that the PI create a CyVerse account, then create a project directory and share it with lab members. Specific sub-directories can be shared with specific lab members as desired.
 
 For projects that are collaborations among multiple labs, one person should be create a project folder to share with all collaborators. Collaborators must decide among themselves who will host the main folder and who has read, write, and own permission for all folders. 
 
-.. tip::
-		Anyone who has own permission on a folder can delete it or rename it!
+Create folders and set permissions
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Following the agreed upon folder hierarchy, create the base folders for your project and give read, write, or own permission to the appropriate project members
 
 The sharing functionality the CyVerse Data Store can be used to share data among project members. This can be done through the |Discovery Environment| via the |data sharing feature| or on the command line using |iCommands|. Project members also can upload and download data using the desktop application |Cyberduck|, but Cyberduck cannot be used for setting sharing permissions.
 
-According to the |CyVerse Data Policy|, all users receive a default allocation of 100GB. Shared data is counted as part of the allocation of whoever owns the folder that contains it. To request an increase to your allocation, should that become necessary, use the |allocation increase form|. We expect that users hosting shared directories will need to request larger data allocations.
-
-If your project needs a shared folder for data that that going to be public during the active research phase of the project (e.g., you want to share transcriptomes or draft genomes as they are created, before publication), you can request a |Community Released Data Folder|. Community Released folders are intended for public data, not for shared projects that are kept private among collaborators.
 
 .. tip::
-		If your project is image based (i.e. you are sharing a lot of images), you may want to use |Bisque| to manage the data. If so, see the page on `Managing a shared Bisque project <bisque_shared.html>`_.
 
-*Manage data in a shared project*
--------------------------------------
-We strongly recommend that a single person be in charge of data management. There should also be a single person (generally the PI) who has ownership of the project folders and who sets read and write permissions for others. This ensures continuity when people move on. The PI can give ownership to a data manager for setting permissions, but should maintain their ownership as well.
+	According to the |CyVerse Data Policy|, all users receive a default allocation of 100GB. Shared data is counted as part of the allocation of whoever owns the folder that contains it. To request an increase to your allocation, should that become necessary, use the |allocation increase form|. We expect that users hosting shared directories will need to request larger data allocations.
 
-The owner of a folder has the ability to delete or rename the folder and any of its contents. If project members are given write permission to the project folder, they will be able to create their own sub-folders which they will own. In this way, project members can control access to their own data.
+If your project needs a shared folder for data that that going to be public during the active research phase of the project (e.g., you want to share transcriptomes or draft genomes as they are created, before publication), you can request a |Community Released Data Folder|. Community Released folders are intended for public data, not for shared projects that are kept private among collaborators. See more below under *Publish data from a shared project*.
 
+Use metadata to organize your files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Folder hierarchies and file naming conventions can be an important part of managing a bit data project, but you cannot relay on them to make your data FAIR (findable, accessible, interoperable, and reusable). Good metadata not only makes your data FAIR, but make it easier for you to manage your project by making files searchable and understandable. 
 
-*Publish data from a shared project*
--------------------------------------
-When you are ready to publish the results of your project, you should also publish the data to an appropriate repository. For sequence data, that is one of the INDSC repositories, such as NCBI's SRA. Other data types can be published to general scientific repositories or to the |CyVerse Data Commons|. See |Publishing your data through the CyVerse Data Commons|.
-
-Group projects that are using a |Community Released Data Folder| to share data pre-publication are encouraged to transition to fully published data (with a DOI) when the data are stable. At that point, data can move into the Data Commons repository in its own folder, or it can remain within the shared project folder, but project members will lose edit access to the dataset. For more questions on this option, contact doi@cyverse.org.
-
+CyVerse offers advanced metadata features for managing your data. See more details under the **add link**.
 
 *Share tools and analyses with project members*
 ---------------------------------------------------
@@ -128,7 +138,14 @@ In the DE, you can create a team (*add link to documentation*) and share apps wi
 
 |Atmosphere| can be used to set up a virtual machine (VM) with project software, which can then be used by all project members. The VM can later be imaged (made permanent) and published along with the project.
 
-If your project includes a lot of computationally intensive analyses, you should consider requesting an XSEDE allocation (for the U.S. national super-computer infrastructure) and setting up HPC workflows using tools such as |Pegasus|.
+If your project includes a lot of computationally intensive analyses, you should consider requesting an XSEDE allocation (for the U.S. national super-computer infrastructure) and setting up HPC workflows using tools such as |Pegasus|. Compute intensive jobs that are highly parellel can be run on the Open Science Grid (`OSG <https://opensciencegrid.org/>`_) via the DE.
+
+*Publish data from a shared project*
+-------------------------------------
+When you are ready to publish the results of your project, you should also publish the data to an appropriate repository. For sequence data, that is one of the INDSC repositories, such as NCBI's SRA. Other data types can be published to general scientific repositories or to the |CyVerse Data Commons|. See |Publishing your data through the CyVerse Data Commons|.
+
+Group projects that are using a |Community Released Data Folder| to share data pre-publication are encouraged to transition to fully published data (with a DOI) when the data are stable. At that point, data can move into the Data Commons repository in its own folder, or it can remain within the shared project folder, but project members will lose edit access to the dataset. For more questions on this option, contact doi@cyverse.org.
+
 
 *Additional information, help*
 -------------------------------------
