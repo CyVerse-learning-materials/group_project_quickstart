@@ -125,7 +125,7 @@ Use metadata to organize your files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Folder hierarchies and file naming conventions can be an important part of managing a bit data project, but you cannot relay on them to make your data FAIR (findable, accessible, interoperable, and reusable). Good metadata not only makes your data FAIR, but make it easier for you to manage your project by making files searchable and understandable. 
 
-CyVerse offers advanced metadata features for managing your data. See more details under the **add link**.
+CyVerse offers advanced metadata features for managing your data. See more details an `the CyVerse wiki metadata page <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE>`_
 
 *Share tools and analyses with project members*
 ---------------------------------------------------
