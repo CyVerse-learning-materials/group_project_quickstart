@@ -1,6 +1,6 @@
 .. include:: cyverse_rst_defined_substitutions.txt
 
-|CyVerse logo|_
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -150,9 +150,7 @@ Group projects that are using a |Community Released Data Folder| to share data p
 *Additional information, help*
 -------------------------------------
 
-Search for an answer:
-|CyVerse Learning Center| or
-|CyVerse Wiki|
+
 
 |Download Cyberduck|
 
@@ -160,8 +158,15 @@ Search for an answer:
 
 **Fix or improve this documentation**
 
-- On Github: |Github Repo Link|
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+
 
 ----
 
